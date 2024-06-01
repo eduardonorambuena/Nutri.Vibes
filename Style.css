@@ -108,54 +108,15 @@ button[type="submit"]:hover {
     width: 100%;
     max-width: 600px;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('imagenes/sandia.jpg'); /* Ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 
-.container {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+/* Estilos para la función de IMC */
+.calculator-container {
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #6200ea; /* Color morado */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
-}
-
-.button:hover {
-    background-color: #7c4dff; /* Cambia el color al pasar el cursor */
-}
-
-input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
 }
 
 #resultado {
@@ -171,12 +132,10 @@ input[type="number"] {
     color: green;
 }
 
-.obesidad {
-    color: red; /* Color rojo para obesidad */
-}
-
 .sobrepeso {
-    color: rgb(214, 214, 3); /* Color amarillo para sobrepeso */
+    color: #d4af37; /* Amarillo oscuro */
 }
 
-
+.obesidad {
+    color: red;
+}

@@ -3,30 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta - Nutri vibes</title>
-    <link rel="stylesheet" href="Style.css">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="consulta.style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Consulta de IMC</h1>
+        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; margin-top: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+            <h2 style="margin-top: 0;">Calculadora de IMC</h2>
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" placeholder="Ingrese su peso en kg">
+            <label for="altura">Altura (m):</label>
+            <input type="number" id="altura" placeholder="Ingrese su altura en metros">
+            <button class="button" onclick="calcularIMC()">Calcular IMC</button>
+            <div id="resultado"></div>
+        </div>
+    </div>
 
-    <header>
-        <div class="logo">Nutri vibes</div>
-    </header>
-    <main>
-        <h2>Calcular IMC</h2>
-        <div class="input-group">
-            <label for="peso">Peso (kg)</label>
-            <input type="number" id="peso" required>
-        </div>
-        <div class="input-group">
-            <label for="altura">Altura (m)</label>
-            <input type="number" id="altura" required>
-        </div>
-        <button onclick="calcularIMC()">Calcular IMC</button>
-        <div id="resultado"></div>
-        <span style="margin-right: 10px;"></span> <!-- Espacio de 10px -->
-        <button onclick="goBack()">Volver Atrás</button>
-    </main>
-    <script src="Script.js"></script>
+    <!-- Reloj -->
+    <div id="clock"></div>
+
     <script>
         function calcularIMC() {
             var peso = parseFloat(document.getElementById('peso').value);
@@ -55,10 +51,6 @@
             }
 
             document.getElementById('resultado').innerHTML = "Su IMC es: " + imc.toFixed(2) + ". Esto indica que usted tiene " + mensaje + ".";
-        }
-
-        function goBack() {
-            window.history.back();
         }
     </script>
 </body>
