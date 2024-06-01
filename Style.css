@@ -16,6 +16,7 @@ header {
 .logo {
     font-size: 24px;
     font-weight: bold;
+    color: #800080; /* Color morado */
 }
 
 .menu {
@@ -45,8 +46,10 @@ button:hover {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     height: calc(100vh - 70px); /* Ajusta este valor según el alto del header */
 }
 
@@ -94,4 +97,14 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+#file-input {
+    margin-top: 20px;
+}
+
+#file-display {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
 }
