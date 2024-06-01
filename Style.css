@@ -171,10 +171,12 @@ input[type="number"] {
     color: green;
 }
 
-.sobrepeso {
-    color: rgb(109, 109, 3);
+.obesidad {
+    color: red; /* Color rojo para obesidad */
 }
 
-.obesidad {
-    color: rgb(199, 8, 8);
+.sobrepeso {
+    color: rgb(214, 214, 3); /* Color amarillo para sobrepeso */
 }
+
+
