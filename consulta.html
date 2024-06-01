@@ -4,24 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta</title>
-    <link rel="stylesheet" href="consulta.style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Consulta de IMC</h1>
-        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; margin-top: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
-            <h2 style="margin-top: 0;">Calculadora de IMC</h2>
-            <label for="peso">Peso (kg):</label>
-            <input type="number" id="peso" placeholder="Ingrese su peso en kg">
-            <label for="altura">Altura (m):</label>
-            <input type="number" id="altura" placeholder="Ingrese su altura en metros">
-            <button class="button" onclick="calcularIMC()">Calcular IMC</button>
-            <div id="resultado"></div>
-        </div>
-    </div>
-
-    <!-- Reloj -->
-    <div id="clock"></div>
 
     <script>
         function calcularIMC() {
