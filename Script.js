@@ -1,3 +1,7 @@
+function goBack() {
+    window.history.back();
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const agendarBtn = document.querySelector('.agendar-btn');
     const loginBtn = document.querySelector('.login-btn');
